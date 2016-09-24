@@ -4,10 +4,16 @@
     <meta charset="utf-8">
     <title>#adulting</title>
     <script type="text/javascript" src="bundle.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css" media="screen">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" media="screen">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Chettan|Fredoka+One|Baloo+Tamma|Pacifico" rel="stylesheet">
+    <link rel="stylesheet" href="./main.css"></link>
   </head>
   <body ng-app="app">
-    <div ng-controller="HomeController">
-      {{ test }}
-    </div>
+    <div ng-include="'./src/header/header.tmpl.html'"></div>
+    <div ng-view></div>
+    <footer>
+      Trying out Angular!
+    </footer>
   </body>
 </html>

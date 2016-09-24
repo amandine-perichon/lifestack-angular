@@ -1,0 +1,403 @@
+* {
+  box-sizing:border-box;
+}
+
+/* ------------------- STYLIMUS PRIME ----------*/
+
+body {
+  font-family: 'Baloo Tamma', cursive;
+  text-align: center;
+  margin: 0;
+}
+
+.error {
+  color: red;
+}
+
+/* ------------------- HEADER / FOOTER STYLE ----------*/
+
+footer {
+  padding: 2rem;
+  background-color:#6564a7;
+  height:70px;
+  color: white;
+  display:block;
+  text-align: center;
+}
+
+footer a {
+  margin: 1rem;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  padding-right: 5rem;
+}
+
+.buttons a {
+  text-decoration: none;
+}
+
+.buttons button {
+  background-color: white;
+  margin: 1rem;
+}
+
+h1 {
+  text-decoration: none;
+  color: #EEE5E9;
+  margin-top: 30px;
+  display: block;
+  font-family: 'Baloo Tamma', cursive;
+  text-align: center;
+  font-size:60px;
+}
+
+h1:hover {
+  color: #6ab8ea;
+}
+
+header {
+  padding: 2rem;
+  padding-bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Baloo Tamma', cursive;
+  /*background-color:#7e7cd2;*/
+  background-color:#6564a7;
+  text-align: center;
+  width:100%;
+}
+
+/* ------------------- HEADER / FOOTER STYLE ----------*/
+.about {
+  display:flex;
+  font-family: 'Baloo Tamma', cursive;
+  font-size: 20px;
+  margin:0 auto;
+  max-width: 100%;
+  padding-top: 80px;
+  padding-bottom:100px;
+  text-align: center;
+}
+.about-paragraph1 {
+  padding-left: 2.5%;
+}
+
+.banner {
+  background-image: url("/src/images/millenial-women-on-phone.jpg");
+  background-size: cover;
+  height:600px;
+  width:100%;
+}
+.hash {
+  font-size: 8rem;
+}
+.mission-statement {
+  height:400px;
+  margin: 0 auto;
+  font-family: 'Pacifico', cursive;
+  padding-top:5%;
+  padding-left:5%;
+  font-size: 30px;
+  color:rgba(255,255,255,255);
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+.heading {
+  text-decoration: none;
+}
+
+login.fields {
+    padding-top:100px;
+    padding-left:200px;
+    100px;
+  }
+
+  .top-videos {
+    background-color: #6ab8ea;
+    display:block;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .top-videos div {
+    display: inline-block;
+    margin: 0 6px;
+    text-align: center;
+  }
+
+  .top-videos-heading {
+    text-transform: uppercase;
+    color:white;
+    padding-top:40px;
+    text-align: center;
+  }
+
+.top3-videos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 25px;
+  height: 480px;
+}
+iframe {
+  border:0;
+}
+.top3-videos iframe {
+  width: 100%;
+  height: 100%;
+}
+
+div.Dropdown-placeholder {
+  display: block;
+  margin: 0 auto;
+}
+
+.top-videos {
+  margin: 0;
+  display: block;
+  align-items: center;
+  max width: 100%;
+}
+
+/* --------------------- SKILL PAGE STYLING ------------------------------ */
+
+.skillTitle {
+  color: black;
+  margin-top: 2%;
+}
+
+.searchBar {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.searchBar select {
+  font-size: 1.5em;
+  display: inline-flex;
+  margin-top: 2%;
+  flex-direction: row;
+}
+
+.cat {
+  width: 300px;
+  margin-right: 1%;
+  text-align-last: center;
+}
+
+.diff {
+  width: 300px;
+  margin-left: 1%;
+  margin-right: 1%;
+  text-align-last: center;
+}
+
+.skill {
+  width: 300px;
+  margin-left: 1%;
+  text-align-last: center;
+}
+
+.diff-cat {
+  display: inline-flex;
+  justify-content: center;
+}
+
+.category {
+  margin-right: 10%;
+}
+
+.difficulty {
+  margin-left: 10%;
+}
+
+.tab {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.got-it-btn {
+  background-color: #94c394;
+  margin: auto;
+  width: 10%;
+}
+
+.skill-video {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 25px;
+  height: 600px;
+  flex-wrap: wrap;
+  margin-bottom: 10rem;
+  margin-right: 6%;
+}
+
+.voting-box {
+  flex-wrap: wrap;
+  margin-right: 3rem;
+}
+
+.skill-video p {
+  margin-right: 3rem;
+  font-size: 2em;
+}
+
+.upvote {
+  margin-bottom: 1rem;
+}
+
+a.username {
+  margin-top: 2.5%;
+  margin-bottom: 2.5%;
+  text-decoration: none;
+  font-size: 2em;
+  margin-right: 37.5%;
+  color: black;
+
+}
+
+a:hover {
+  color: #1eaedb;
+}
+
+.skill-video iframe {
+  width: 80%;
+  height: 100%;
+}
+
+#disqus_thread {
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+}
+
+/* ------------------- PROFILE / CONTRIBUTOR STYLE ----------*/
+
+.user-profile,
+.contributor-profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ------------------- USER GAME STYLE ----------------------*/
+
+.skill-suggestion {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-top: 3rem;
+  margin-bottom: 5rem;
+  min-width: 600px;
+}
+
+.suggested-skill {
+  font-size: 3rem;
+}
+
+.suggestion-answer {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* ------------------- USER SKILL LIST STYLE ---------------*/
+
+.skill-list .select-upload * {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.upload-url {
+  width: 30%;
+}
+
+.delete-button {
+  top: 0;
+  width: 2rem;
+  margin-left: 1.5rem;
+}
+
+/* ------------------- USER GAME STYLE ----------------------*/
+
+.user-game {
+  display: flex;
+  flex-direction: row;
+  margin: 50px;
+}
+
+.profile-pic {
+  height: 100px;
+  border: 3px solid grey;
+}
+
+.left {
+  height: 100px;
+  position: relative;
+}
+
+.right {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.level {
+  position: absolute;
+  bottom: 0px;
+  right: 10px;
+  font-size: 5rem;
+  color: #6ab8ea;
+}
+
+.user-name {
+  font-size: 2rem;
+  border-top: 3px solid grey;
+  border-right: 3px solid grey;
+  margin-bottom: 0;
+  padding-left: 1rem;
+}
+
+.select-upload button {
+  color: white;
+  background-color: #9388bb;
+}
+
+.levelXp {
+  border-right: 3px solid grey;
+  border-top: 3px solid grey;
+  border-bottom: 3px solid grey;
+  margin-bottom: 0;
+  height: 30px;
+}
+
+.totalXp {
+  height: 24px;
+  border: 4px solid #6ab8ea;
+  background-color: #6ab8ea;
+  margin-bottom: 0;
+}
+
+.label {
+    padding-left: 1rem;
+}
+
+@media screen and (min-width: 550px) {
+  .mission-statement {
+    padding-top: 0%;
+    font-size: 25px;
+  }
+}
+
+@media screen and (min-width: 720px) {
+   .mission-statement {
+    padding-top:3%;
+    padding-left:5%;
+    font-size: 30px;
+  }
+}
