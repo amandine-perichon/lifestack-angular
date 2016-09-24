@@ -1,0 +1,24 @@
+<div ng-controller="searchController">
+
+  <div class="searchBar">
+    <select class="cat" ng-model="selectedCategory">
+      <option ng-repeat="category in categories" value="">{{category}}</option>
+    </select>
+    <select class="diff" ng-model="selectedDifficulty">
+      <option ng-repeat="difficulty in difficulties" value="">{{difficulty}}</option>
+    </select>
+    <select class="skill" onChange={this.onSkillSelect} value={this.state.selectedSkill}>
+      <option ng-repeat="skill in skills" value="">{{skill.skillName}}</option>
+    </select>
+  </div>
+
+  <div class="skill-video" ng-repeat="video in searchVideos">
+    <div class="voting-box">
+      <img class="upvote" src="../src/images/up.png" />
+      <p class="votes">{{video.votes}} votes</p>
+      <img class="downvote" src="../src/images/down.png" />
+    </div>
+    <iframe ng-src="{{video.url | trusted }}" width="1280" height="720" allowFullScreen></iframe>
+    <p class="username">Uploaded by {{video.user_details.username}}</Link>
+  </div>
+</div>

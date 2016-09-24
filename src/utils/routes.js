@@ -5,7 +5,7 @@ export default function($routeProvider) {
           controller  : 'homeController'
       })
       .when('/search', {
-          templateUrl : './src/skills/skills.tmpl.html',
-          controller  : 'headerController'
+          templateUrl : './src/search/search.tmpl.html',
+          controller  : 'searchController'
       })
 }
