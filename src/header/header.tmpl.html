@@ -3,10 +3,11 @@
     <h1 ng-click="go('/')">#adulting</h1>
     <div class="buttons">
     <button class="search-home" ng-click="go('/search')">Search</button>
-    <button><a class="twitter-sign-in" href="http://localhost:3000/auth/twitter">Log in with Twitter</a></button>
-    <div>
-      <button>Profile</button>
-      <button>Logout</button>
+    <button ng-if="!user" ng-click="login()">Log in</button>
+    <!-- <button><a class="twitter-sign-in" href="http://localhost:3000/auth/twitter">Log in with Twitter</a></button> -->
+    <div ng-if="user">
+      <button ng-click="go('/profile/{{user.id}}')">Profile</button>
+      <button ng-click="logout()">Logout</button>
     </div>
     </div>
   </header>

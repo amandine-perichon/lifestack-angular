@@ -1,0 +1,48 @@
+<div class="user-profile" ng-controller="profileController">
+  <div class="error"></div>
+
+  <div class="user-game">
+    <div class="left">
+      <img class="profile-pic" ng-src="{{user.profile_pic}}" alt="Profile Picture" />
+      <p class="level">{{user.level}}</p>
+    </div>
+
+    <div class="right">
+      <div>
+        <div class = "user-name">{{user.username}}</div>
+      </div>
+      <div class="levelXp" ng-style="levelXpStyle">
+        <div class="totalXp" ng-style="totalXpStyle">
+        <div class="label" style=""</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="skill-suggestion">
+    <div class="suggested-skill">Want to learn {{random.skillName}}?</div>
+    <div class="suggestion-answer">
+      <span ng-click="go('/search')">YES, Show me the skill page!</span>
+      <span ng-click="randomSkill()">NO, Show me another skill!</span>
+    </div>
+  </div>
+  <table>
+    <thead>
+    <tr>
+       <th>Skill</th>
+       <th>Difficulty</th>
+       <th>Status</th>
+       <th>XP</th>
+    </tr>
+    </thead>
+    <tbody>
+      <tr class="contributor-skill" ng-repeat="skill in user.skillList">
+          <td>{{skill.skillName}}</td>
+          <td>{{skill.difficulty}}</td>
+          <td>{{skill.status}}</td>
+          <td>{{skill.skillXp}}</td>
+      </tr>
+    </tbody>
+  </table>
+
+</div>

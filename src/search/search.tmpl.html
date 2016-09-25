@@ -1,14 +1,11 @@
 <div ng-controller="searchController">
 
   <div class="searchBar">
-    <select class="cat" ng-model="selectedCategory">
-      <option ng-repeat="category in categories" value="">{{category}}</option>
+    <select class="cat" ng-model="selectedCategory" ng-options="x for x in categories">
     </select>
-    <select class="diff" ng-model="selectedDifficulty">
-      <option ng-repeat="difficulty in difficulties" value="">{{difficulty}}</option>
+    <select class="diff" ng-model="selectedDifficulty" ng-options="x for x in difficulties">
     </select>
-    <select class="skill" onChange={this.onSkillSelect} value={this.state.selectedSkill}>
-      <option ng-repeat="skill in skills" value="">{{skill.skillName}}</option>
+    <select class="skill" ng-model="selectedSkill" ng-change="go('/search/' + selectedSkill.id)" ng-options="skill.skillName for skill in (skills | filteredSkills:selectedCategory:selectedDifficulty)">
     </select>
   </div>
 
@@ -19,6 +16,6 @@
       <img class="downvote" src="../src/images/down.png" />
     </div>
     <iframe ng-src="{{video.url | trusted }}" width="1280" height="720" allowFullScreen></iframe>
-    <p class="username">Uploaded by {{video.user_details.username}}</Link>
+    <p class="username">Uploaded by <a href="/#/profile/{{video.user_details.id}}">{{video.user_details.username}}</a></Link>
   </div>
 </div>
